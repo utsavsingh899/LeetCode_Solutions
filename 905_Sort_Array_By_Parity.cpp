@@ -1,18 +1,15 @@
 class Solution {
 public:
     vector<int> sortArrayByParity(vector<int>& A) {
-        vector<int> B, C;
-        int i, j = 0, k = 0;
-        for (i = 0; i < A.size(); ++i) {
-            if (A[i] & 1) {
-                C.push_back(A[i]);
-                ++j;
+        int l = 0, r = A.size() - 1;
+        while (l < r) {
+            if (A[l]&1) {
+                swap (A[l], A[r]);
+                --r;
             }
             else
-                B.push_back(A[i]);
+                ++l;
         }
-        for (i = 0; i < j; ++i)
-            B.push_back(C[i]);
-        return B;
+        return A;
     }
 };
