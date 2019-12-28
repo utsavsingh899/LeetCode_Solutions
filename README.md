@@ -1,2 +1,3 @@
 # LeetCode_Solutions
-Solution to LeetCode Problems
+* Solutions to LeetCode Problems
+* Written in `C++`
