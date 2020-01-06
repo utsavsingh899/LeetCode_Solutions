@@ -12,18 +12,8 @@ public:
             for (j = 0; j < n; ++j)
                 mp[i + j].push_back(matrix[i][j]);
         }
-        /*for (i = 0; i < mp.size(); ++i){
-            for (j = 0; j < mp[i].size(); ++j)
-                cout << mp[i][j] << " ";
-            cout << "\n";
-        }*/
         for (i = 0; i < mp.size(); i += 2)
             reverse(mp[i].begin(), mp[i].end());
-        /*for (i = 0; i < mp.size(); ++i){
-            for (j = 0; j < mp[i].size(); ++j)
-                cout << mp[i][j] << " ";
-            cout << "\n";
-        }*/
         for (i = 0; i < mp.size(); ++i)
             for(j = 0; j < mp[i].size(); ++j)
                 ans.push_back(mp[i][j]);
