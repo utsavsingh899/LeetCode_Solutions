@@ -1,3 +1,9 @@
+
+
+
+
+
+
 class Solution {
 public:
     int getTime(vector<int> A, vector<int> B) {
@@ -5,9 +11,14 @@ public:
     }
     int minTimeToVisitAllPoints(vector<vector<int>>& points) {
         int time = 0;
-        for (int i = 1; i < points.size(); ++i) {
+
+        for (int i = 1; i < points.size(); ++i) 
             time += getTime(points[i-1], points[i]);
-        }
+
         return time;
     }
 };
+
+
+
+
