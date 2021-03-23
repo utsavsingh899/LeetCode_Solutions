@@ -1,3 +1,5 @@
+
+
 class RecentCounter {
 public:
     queue<int> q;
@@ -18,3 +20,4 @@ public:
  * RecentCounter* obj = new RecentCounter();
  * int param_1 = obj->ping(t);
  */
+
