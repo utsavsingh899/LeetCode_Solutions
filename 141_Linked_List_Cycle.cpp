@@ -1,3 +1,5 @@
+
+
 /**
  * Definition for singly-linked list.
  * struct ListNode {
@@ -16,6 +18,7 @@ public:
             seen.insert(head);
             head = head -> next;
         }
+
         return false;
     }
 };

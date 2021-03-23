@@ -13,8 +13,10 @@ public:
     vector<vector<int>> floodFill(vector<vector<int>>& image, int sr, int sc, int newColor) {
         if (image.size() == 0 || image[0].size() == 0)
             return {};
+
         if (image[sr][sc] != newColor)
             dfs(image, sr, sc, newColor, image[sr][sc]);
+
         return image;
     }
 };
